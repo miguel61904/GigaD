@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(16,18,24,255);
+    font-family: "Lobster";
+}
+
+p{
+    background-color: transparent;
+}
+
+svg{
+    background-color: transparent;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(16,18,24,255);
+    
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(16,18,24,255);
+}
+.navbar {
+    position: fixed; /* Hace que la barra de navegación sea fija */
+    top: 0; /* La fija en la parte superior de la ventana */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    background-color: transparent; /* Color de fondo */
+    color: white; /* Color del texto */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    background-color: transparent;
+  }
+  
+  .navbar-menu li {
+    background-color: transparent;
+    margin-left: 20px;
+  }
+
+  .navbar-menu ul li a{
+    background-color: transparent;
+  }
+
+  .navbar-container div {
+    background-color: transparent;
+  }
+
+  .contImg1{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .subContImg1{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../../public/img/fondo2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .subContImg1 div{
+    color: white;
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:40px;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  h4{
+    position: absolute;
+    background-color: transparent;
+    width: 30vw;
+  }
+  .contProductos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contProductos div{
+    border-radius: 5px;
+    color:white;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  img{
+    background-color: transparent;
+  }
+  
+  .contProductos div:hover{
+    background-color: #b20710;
+    transition: 1s;
+  }
+
+  .letras{
+    color: white;
+    text-align: center;
+  }
+
+  /*whatsapp*/
+
+  .whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color: transparent;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+
+  /*Envio*/
+
+  .envio{
+    height: 20vh;
+    width: 100vw;
+    background-color: #b20710;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+  .envio div{
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .envio div svg{
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+  }
+  /*beneficios*/
+  .beneficios{
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 100px;
+  }
+
+  .imgInfo{
+    height: 50vh;
+    width: 50vw;
+  }
