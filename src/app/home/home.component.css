@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     background-color: rgba(16,18,24,255);
-    font-family: "Lobster";
+    font-family: "Lora";
+}
+
+b{
+  background-color: transparent;
 }
 
 p{
@@ -72,7 +76,7 @@ body{
   .subContImg1{
     height: 100vh;
     width: 100vw;
-    background-image: url("../../../public/img/fondo2.webp");
+    background-image: url("../../../public/img/gigafondo.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
@@ -175,7 +179,7 @@ body{
     height: 50vh;
     width: 80vw;
     display: flex;
-    color: white;
+    color: rgb(196, 196, 196);
     justify-content: center;
     text-align: justify;
     margin-top: 100px;
@@ -184,4 +188,24 @@ body{
   .imgInfo{
     height: 50vh;
     width: 50vw;
+  }
+
+  .h{
+    color: #79c314;
+  }
+
+  .a{
+    color: #ffa500;
+  }
+
+  .p{
+    color: #487de7;
+  }
+
+  .p2{
+    color: #4b369d;
+  }
+
+  .y{
+    color: #e81416;
   }
