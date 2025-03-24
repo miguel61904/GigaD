@@ -5,6 +5,12 @@
     font-family: "Lora";
 }
 
+a{
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 b{
   background-color: transparent;
 }
@@ -39,14 +45,17 @@ body{
     background-color: transparent; /* Color de fondo */
     color: white; /* Color del texto */
     z-index: 100; /* Asegura que esté por encima de otros elementos */
+    margin: 0;
+    padding: 0;
   }
   
   .navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
     background-color: transparent;
+    margin: 0;
+    padding: 0;
   }
   
   .navbar-menu {
@@ -70,12 +79,12 @@ body{
 
   .contImg1{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
   }
 
   .subContImg1{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url("../../../public/img/gigafondo.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,32 +96,34 @@ body{
     color: white;
     position: absolute;
     height: 70vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size:40px;
+    font-size: 40px;
     background-color: transparent;
     text-align: center;
   }
 
   h4{
-    position: absolute;
     background-color: transparent;
-    width: 30vw;
+    width: 30%;
   }
+  /*productos*/
   .contProductos{
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
   }
 
-  .contProductos div{
+  .contProductos div a{
     border-radius: 5px;
     color:white;
     margin: 20px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   img{
     background-color: transparent;
@@ -151,8 +162,8 @@ body{
   /*Envio*/
 
   .envio{
-    height: 20vh;
-    width: 100vw;
+    height: 30vh;
+    width: 100%;
     background-color: #b20710;
     display: flex;
     justify-content: space-around;
@@ -160,7 +171,7 @@ body{
     flex-direction: row;
     margin-top: 100px;
   }
-  .envio div{
+  .cont-envio{
     background-color: transparent;
     text-align: center;
     display: flex;
@@ -168,6 +179,12 @@ body{
     align-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .envio div{
+    background-color: transparent;
+    text-align:justify;
   }
   .envio div svg{
     height: 80px;
@@ -208,4 +225,33 @@ body{
 
   .y{
     color: #e81416;
+  }
+
+  @media only screen and (max-width:600px) {
+    .subContImg1 div{
+      font-size: 20px;
+    }
+    .subContImg1{
+      background-size: cover;
+      background-position: center;
+    }
+    .beneficios{
+      height: 50vh;
+      width: 100%;
+      display: flex;
+      color: rgb(196, 196, 196);
+      justify-content: center;
+      text-align: justify;
+      margin-top: 350px;
+      flex-direction: column;
+    }
+
+    .beneficios h3{
+      text-align: center;
+    }
+  
+    .imgInfo{
+      height: 50vh;
+      width: 50vw;
+    }
   }
