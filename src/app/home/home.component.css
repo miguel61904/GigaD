@@ -228,6 +228,16 @@ body{
   }
 
   @media only screen and (max-width:600px) {
+    .envio div{
+      background-color: transparent;
+      text-align:center;
+      font-size: 10px;
+    }
+    .envio div svg{
+      height: 50px;
+      width: 50px;
+      background-color: transparent;
+    }
     .subContImg1 div{
       font-size: 20px;
     }
