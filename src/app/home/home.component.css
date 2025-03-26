@@ -1,187 +1,196 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: rgba(16,18,24,255);
-    font-family: "Lobster";
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(16, 18, 24, 255);
+  font-family: "Lobster";
 }
 
-p{
-    background-color: transparent;
+p {
+  background-color: transparent;
 }
 
-svg{
-    background-color: transparent;
+svg {
+  background-color: transparent;
 }
 
-html{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(16,18,24,255);
-    
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(16, 18, 24, 255);
 }
 
-body{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(16,18,24,255);
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(16, 18, 24, 255);
 }
+
 .navbar {
-    position: fixed; /* Hace que la barra de navegación sea fija */
-    top: 0; /* La fija en la parte superior de la ventana */
-    left: 0;
-    width: 100%; /* Ocupa todo el ancho de la ventana */
-    background-color: transparent; /* Color de fondo */
-    color: white; /* Color del texto */
-    z-index: 100; /* Asegura que esté por encima de otros elementos */
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: transparent;
-  }
-  
-  .navbar-menu {
-    list-style: none;
-    display: flex;
-    background-color: transparent;
-  }
-  
-  .navbar-menu li {
-    background-color: transparent;
-    margin-left: 20px;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* El 100% asegura que ocupe todo el ancho disponible */
+  background-color: transparent;
+  z-index: 100;
+}
 
-  .navbar-menu ul li a{
-    background-color: transparent;
-  }
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1200px; /* Ancho máximo para evitar que se expanda demasiado */
+  margin: 0 auto; /* Centrar horizontalmente */
+  width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+}
 
-  .navbar-container div {
-    background-color: transparent;
-  }
+.logo img {
+  height: 80px;
+  width: auto; /* Ajustar el ancho automáticamente */
+  background-color: transparent;
+}
 
-  .contImg1{
-    height: 100vh;
-    width: 100vw;
-  }
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 
-  .subContImg1{
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../../public/img/fondo2.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    position: relative;
-  }
+.nav-links li {
+  margin-left: 20px;
+}
 
-  .subContImg1 div{
-    color: white;
-    position: absolute;
-    height: 70vh;
-    width: 100vw;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size:40px;
-    background-color: transparent;
-    text-align: center;
-  }
+.nav-links a {
+  text-decoration: none;
+  color: white; /* O el color que prefieras */
+  background-color: transparent;
+}
 
-  h4{
-    position: absolute;
-    background-color: transparent;
-    width: 30vw;
-  }
-  .contProductos{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
+.contImg1 {
+  height: 100vh; /* Mantener vh si quieres que ocupe toda la altura de la pantalla */
+  width: 100%; /* Usar 100% en lugar de 100vw */
+}
 
-  .contProductos div{
-    border-radius: 5px;
-    color:white;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  img{
-    background-color: transparent;
-  }
-  
-  .contProductos div:hover{
-    background-color: #b20710;
-    transition: 1s;
-  }
+.subContImg1 {
+  height: 100vh; /* Mantener vh si quieres que ocupe toda la altura de la pantalla */
+  width: 100%; /* Usar 100% en lugar de 100vw */
+  background-image: url("../../../public/img/fondo2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+}
 
-  .letras{
-    color: white;
-    text-align: center;
-  }
+.subContImg1 div {
+  color: white;
+  position: absolute;
+  height: 70vh; /* Mantener vh si quieres que ocupe el 70% de la altura de la pantalla */
+  width: 100%; /* Usar 100% en lugar de 100vw */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 40px;
+  background-color: transparent;
+  text-align: center;
+}
 
-  /*whatsapp*/
+h4 {
+  background-color: transparent;
+  width: 30%; /* Usar 30% en lugar de 30vw */
+}
 
-  .whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color: transparent;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
-  }
-  
-  .whatsapp-icon {
-    margin-top:13px;
-  }
+.contProductos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
-  /*Envio*/
+.contProductos div {
+  border-radius: 5px;
+  color: white;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .envio{
-    height: 20vh;
-    width: 100vw;
-    background-color: #b20710;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 100px;
-  }
-  .envio div{
-    background-color: transparent;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .envio div svg{
-    height: 80px;
-    width: 80px;
-    background-color: transparent;
-  }
-  /*beneficios*/
-  .beneficios{
-    height: 50vh;
-    width: 80vw;
-    display: flex;
-    color: white;
-    justify-content: center;
-    text-align: justify;
-    margin-top: 100px;
-  }
+img {
+  background-color: transparent;
+}
 
-  .imgInfo{
-    height: 50vh;
-    width: 50vw;
-  }
+.contProductos div:hover {
+  background-color: #b20710;
+  transition: 1s;
+}
+
+.letras {
+  color: white;
+  text-align: center;
+}
+
+/*whatsapp*/
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: transparent;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+/*Envio*/
+
+.envio {
+  height: 20vh; /* Mantener vh si quieres que ocupe el 20% de la altura de la pantalla */
+  background-color: #b20710;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.envio div {
+  background-color: transparent;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.envio div svg {
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+}
+
+/*beneficios*/
+
+.beneficios {
+  height: 50vh; /* Mantener vh si quieres que ocupe el 50% de la altura de la pantalla */
+  width: 80%; /* Usar 80% en lugar de 80vw */
+  display: flex;
+  color: white;
+  justify-content: center;
+  text-align: justify;
+  margin-top: 100px;
+}
+
+.imgInfo {
+  height: 50vh; /* Mantener vh si quieres que ocupe el 50% de la altura de la pantalla */
+  width: 50%; /* Usar 50% en lugar de 50vw */
+}

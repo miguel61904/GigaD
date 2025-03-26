@@ -1,7 +1,17 @@
 *{
-
-    margin: 0;
-    padding: 0;
     background-color: rgba(16,18,24,255);
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(16,18,24,255);
+  }
+  
+  app-root {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
