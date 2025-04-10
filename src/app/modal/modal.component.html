@@ -1,15 +1,18 @@
 <div class="contPrincipal">
-    <div class="imagen">
+    <div #contImg class="imagen">
         
     </div>
-    <div class="cont_info">
-        <div class="info">
+    <div #contInfo class="cont_info">
+        <div class="info" *ngIf="productoSeleccionado" >
             <br>
-            <h2>{{productos[0].nombre}}</h2>
+            <h2>{{productoSeleccionado.nombre}}</h2>
             <br>
-            <p [innerHTML]="productos[0].descripcion">
-               
+            <p [innerHTML]="productoSeleccionado.descripcion">
             </p>
+            <br>
+            <div>
+                <button class="buy-btn" (click)="redyWhatsapp()">Buy</button>
+            </div>
         </div>
     </div>
 </div>
