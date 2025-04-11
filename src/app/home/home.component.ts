@@ -29,4 +29,15 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     
   }
+  btnSmall(){
+    window.location.href = "https://wa.me/573204577645?text=Me%20gustaría%20saber%20sobre%20el%20Shilajit%20pequeño"
+  }
+  btnMedium(){
+    window.location.href = "https://wa.me/573204577645?text=Me%20gustaría%20saber%20sobre%20el%20Shilajit%20mediano"
+  }
+
+  btnBig(){
+    window.location.href = "https://wa.me/573204577645?text=Me%20gustaría%20saber%20sobre%20el%20Shilajit%20grande"
+  }
+
 }

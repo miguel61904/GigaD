@@ -17,3 +17,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .custom-modal .mat-dialog-container {
   border-radius: 0 !important; /* Elimina el border-radius */
 }
+
+@media (min-width: 768px) {
+  .custom-modal {
+    width: 100vw;
+    height: 80vh;
+  }
+}

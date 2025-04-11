@@ -30,7 +30,7 @@
             </a>
             <div class="overlay">
                 <button mat-button class="btn vew" (click)="openDialog(1)">Vew more</button>
-                <button class="btn add">Buy</button>
+                <button class="btn add" (click)="btnSmall()">Buy</button>
             </div>
             <b>Size: Small</b>
             <b>$50.000</b>
@@ -41,7 +41,7 @@
             </a>
             <div class="overlay">
                 <button mat-button class="btn vew" (click)="openDialog(2)">Vew more</button>
-                <button class="btn add">Buy</button>
+                <button class="btn add"(click)="btnMedium()">Buy</button>
             </div>
             <b>Size: Medium</b>
             <b>$200.000</b>
@@ -52,7 +52,7 @@
             </a>
             <div class="overlay">
                 <button mat-button class="btn vew" (click)="openDialog(3)">Vew more</button>
-                <button class="btn add">Buy</button>
+                <button class="btn add" (click)="btnBig()">Buy</button>
             </div>
             <b>Size: Big</b>
             <b>$350.000</b>

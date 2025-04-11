@@ -23,6 +23,7 @@ h2{
     border-radius: 0px;
     background-color: rgba(16, 18, 24, 255);
     border-radius: 0px;
+    flex-wrap: wrap;
 }
 
 .imagen{
@@ -37,6 +38,7 @@ h2{
  .cont_info{
     height: 100%;
     width: 50%; 
+    background-color: rgba(16, 18, 24, 255);
     background-image:url('../../../public/img/chica1.png');
     background-size: cover;
     background-position: center;
@@ -63,3 +65,21 @@ h2{
     box-shadow: 5px 5px 5px black;
     cursor:pointer;
 }
+
+@media only screen and (max-width:767px) {
+    .imagen{
+        height: 100%;
+        width: 100%;
+    }
+    .cont_info{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-modal {
+      width: 80vw;
+      height: 80vh;
+    }
+  }
