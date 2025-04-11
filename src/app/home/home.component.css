@@ -6,10 +6,6 @@
     color: rgb(196, 196, 196);
 }
 
-button{
-  cursor: pointer;
-}
-
 a{
   color: white;
   text-decoration: none;
@@ -26,18 +22,6 @@ p {
 
 svg {
   background-color: transparent;
-}
-
-html {
-  height: 100%;
-  width: 100%;
-
-}
-
-body {
-  height: 100%;
-  width: 100%;
-
 }
 
 .navbar {
@@ -285,26 +269,6 @@ body {
   .imgInfo{
     height: 50vh;
     width: 50vw;
-  }
-
-  .h{
-    color: #79c314;
-  }
-
-  .a{
-    color: #ffa500;
-  }
-
-  .p{
-    color: #487de7;
-  }
-
-  .p2{
-    color: #4b369d;
-  }
-
-  .y{
-    color: #e81416;
   }
   /* Diseño responsive */
   @media only screen and (max-width:767px) {
