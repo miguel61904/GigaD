@@ -31,15 +31,13 @@ svg {
 html {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(16, 18, 24, 255);
+
 }
 
 body {
   height: 100%;
   width: 100%;
-  background-color: rgba(16, 18, 24, 255);
+
 }
 
 .navbar {
@@ -201,7 +199,6 @@ body {
   }
   
   .btn.view::before {
-    content: "👁️";
     margin-right: 8px;
   }
   
@@ -385,14 +382,4 @@ body {
     animation-fill-mode: both;
   }
 
-  .aislado app-modal *{
-    all: unset;
-  }
-
-  @media (min-width: 768px) {
-    .custom-modal {
-      width: 100vw;
-      height: 80vh;
-    }
-  }
   
